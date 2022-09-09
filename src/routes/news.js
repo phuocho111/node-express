@@ -5,7 +5,7 @@ const newsController = require('../app/controllers/NewsController');
 
 //newsController.index
 
-router.use('/:slug', newsController.show); //uu tien
-router.use('/', newsController.index);
+router.get('/:slug', newsController.show); //uu tien
+router.get('/', newsController.index);
 
 module.exports = router;
