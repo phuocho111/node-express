@@ -8,7 +8,7 @@ router.post('/store',courseController.store);
 router.get('/:id/edit', courseController.edit); 
 router.put('/:id', courseController.update);
 router.get('/:slug', courseController.show); //uu tien
-
+router.delete('/:id', courseController.destroy);
 
 
 module.exports = router;
