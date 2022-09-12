@@ -9,6 +9,9 @@ router.get('/:id/edit', courseController.edit);
 router.put('/:id', courseController.update);
 router.get('/:slug', courseController.show); //uu tien
 router.delete('/:id', courseController.destroy);
+router.delete('/:id/force', courseController.forceDestroy);
+router.patch('/:id/restore', courseController.restore);
+
 
 
 module.exports = router;
